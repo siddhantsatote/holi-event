@@ -96,28 +96,28 @@ const Hero = () => {
             transition={{ type: "spring", stiffness: 100, damping: 10, duration: 0.8 }}
             className="relative"
           >
-             {/* Sticker Effect Logo */}
-             <img 
-               src="/fest-logo.png" 
-               alt="Colour Fest" 
-               className="h-[200px] md:h-[300px] lg:h-[380px] w-auto object-contain drop-shadow-[0_10px_35px_rgba(0,0,0,0.5)] hover:scale-105 transition-transform duration-500"
-               style={{ filter: "drop-shadow(0px 0px 0px white)" }} /* Add white stroke effect via CSS if simplified, or rely on actual image */
-             />
-             
-             {/* Floating Elements (Decorations) */}
-             <motion.div 
-               animate={{ y: [-10, 10, -10], rotate: [0, 5, 0] }}
-               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-               className="absolute -top-10 -right-10 text-6xl"
+             {/* Logo & Splash Container */}
+             <motion.div
+               animate={{ y: [-15, 15, -15] }}
+               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+               className="relative z-10 flex items-center justify-center"
              >
-               🎨
-             </motion.div>
-             <motion.div 
-               animate={{ y: [10, -10, 10], rotate: [0, -5, 0] }}
-               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-               className="absolute -bottom-5 -left-10 text-6xl"
-             >
-               ✨
+               {/* Color Explosion Background (Fest BG) */}
+               <motion.img
+                 src="/fest-bg.png"
+                 alt=""
+                 animate={{ rotate: 360 }}
+                 transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                 className="absolute w-[180%] md:w-[200%] max-w-none object-contain opacity-90 pointer-events-none z-10"
+               />
+
+               {/* Fest Logo */}
+               <img 
+                 src="/fest-logo.png" 
+                 alt="Colour Fest" 
+                 className="h-[180px] md:h-[280px] lg:h-[350px] w-auto object-contain drop-shadow-[0_10px_35px_rgba(0,0,0,0.5)] hover:scale-105 transition-transform duration-500 relative z-20"
+                 style={{ filter: "drop-shadow(0px 0px 0px white)" }} 
+               />
              </motion.div>
           </motion.div>
         </div>
