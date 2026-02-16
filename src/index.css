@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 255 69 0;
+    --secondary: 50 205 50;
+    --accent: 148 0 211;
+    --background: 10 10 10;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-background text-white font-body selection:bg-primary/30;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading;
+}
+
+/* ========== CUSTOM SCROLLBAR ========== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #FF4500, #9400D3); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #FF6347, #7B68EE); }
+
+/* ========== GLOW ANIMATIONS ========== */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 69, 0, 0.3), 0 0 60px rgba(255, 69, 0, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(255, 69, 0, 0.5), 0 0 80px rgba(255, 69, 0, 0.2); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes color-wave {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+.pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
+.animate-float { animation: float 4s ease-in-out infinite; }
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 3s linear infinite;
+}
+.animate-gradient { 
+  background-size: 200% 200%;
+  animation: gradient-shift 4s ease infinite; 
+}
+.animate-color-wave { animation: color-wave 8s linear infinite; }
+
+/* ========== GLASS MORPHISM ========== */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 69, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(255, 69, 0, 0.1);
+}
+
+/* ========== GRADIENT TEXT ========== */
+.text-gradient-fire {
+  background: linear-gradient(135deg, #FFD700, #FF4500, #FF1493);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cool {
+  background: linear-gradient(135deg, #32CD32, #00BFFF, #7B68EE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ========== BUTTON STYLES ========== */
+.btn-primary {
+  @apply inline-block font-bold rounded-full transition-all transform;
+  background: linear-gradient(135deg, #FFD700, #FF4500, #FF1493);
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.3);
+}
+
+.btn-primary:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 69, 0, 0.5);
+}
+
+/* ========== CARD STYLES ========== */
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, transparent, rgba(255, 69, 0, 0.1), transparent 30%);
+  animation: spin 6s linear infinite;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.card-glow:hover::before {
+  opacity: 1;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}
