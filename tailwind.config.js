@@ -7,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#FF4500', // Orange Red
+        primary: '#FFE500', // Yellow (HackByte Vibe)
         secondary: '#32CD32', // Lime Green
         accent: '#9400D3', // Dark Violet
-        background: '#121212', // Dark Background
+        background: '#0a0a0a', // Dark Background
       },
       fontFamily: {
         heading: ['"Outfit"', 'sans-serif'],

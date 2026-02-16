@@ -31,12 +31,7 @@ const Home = () => {
     <div className="relative min-h-screen overflow-hidden selection:bg-[#FFE500] selection:text-black">
       <Hero />
 
-      {/* Global Background Ambience */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-         <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-purple-900/20 rounded-full blur-[120px] animate-pulse"></div>
-         <div className="absolute top-[50%] right-[-10%] w-[600px] h-[600px] bg-blue-900/20 rounded-full blur-[100px]"></div>
-         <div className="absolute bottom-[10%] left-[20%] w-[400px] h-[400px] bg-pink-900/20 rounded-full blur-[100px] animate-pulse"></div>
-      </div>
+
 
       {/* Features / What to Expect */}
       <section className="py-24 px-4 max-w-7xl mx-auto relative z-10">
