@@ -27,7 +27,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-primary flex-shrink-0" />
-                info@aceevents.com
+                aceeventmanagemant@gmail.com
               </li>
             </ul>
           </div>
