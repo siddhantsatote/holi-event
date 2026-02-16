@@ -86,7 +86,7 @@ const Hero = () => {
         </div>
 
         {/* Center/Right: Sticker Logo (Reference: "HackByte" logo) */}
-        <div className="lg:col-span-7 flex justify-center lg:justify-end relative order-1 lg:order-2">
+        <div className="lg:col-span-7 flex justify-center relative order-1 lg:order-2">
           {/* Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-primary/30 via-purple-500/30 to-blue-500/30 blur-[80px] rounded-full animate-pulse"></div>
           
@@ -100,7 +100,7 @@ const Hero = () => {
              <img 
                src="/fest-logo.png" 
                alt="Colour Fest" 
-               className="h-[250px] md:h-[350px] lg:h-[450px] w-auto object-contain drop-shadow-[0_10px_35px_rgba(0,0,0,0.5)] hover:scale-105 transition-transform duration-500"
+               className="h-[200px] md:h-[300px] lg:h-[380px] w-auto object-contain drop-shadow-[0_10px_35px_rgba(0,0,0,0.5)] hover:scale-105 transition-transform duration-500"
                style={{ filter: "drop-shadow(0px 0px 0px white)" }} /* Add white stroke effect via CSS if simplified, or rely on actual image */
              />
              
