@@ -44,15 +44,13 @@ const Navbar = () => {
 
         <div className="w-px h-6 bg-white/20 mx-2"></div>
 
-        <a
-          href="https://rzp.io/rzp/piELYEN"
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link
+          to="/tickets"
           className="flex items-center gap-2 bg-[#FFE500] hover:bg-[#FFD700] text-black px-6 py-2.5 rounded-full font-bold text-sm transition-transform hover:scale-105 shadow-[0_0_15px_rgba(255,229,0,0.4)]"
         >
           <Ticket size={18} />
           <span>BUY TICKETS</span>
-        </a>
+        </Link>
       </motion.nav>
 
       {/* Mobile Nav (Top Bar + Hamburger) */}
@@ -107,10 +105,8 @@ const Navbar = () => {
                   </Link>
                 ))}
 
-                <a
-                  href="https://rzp.io/rzp/piELYEN"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <Link
+                  to="/tickets"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center gap-4 p-4 rounded-xl hover:bg-white/10 transition-all group mt-2 bg-white/5 border border-white/10"
                 >
@@ -120,7 +116,7 @@ const Navbar = () => {
                   <span className="text-xl font-bold text-yellow-400 tracking-wide">
                     Buy Tickets
                   </span>
-                </a>
+                </Link>
               </div>
 
               {/* Close Button */}

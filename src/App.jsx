@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import ParticleBackground from './components/ParticleBackground';
 import Footer from './components/Footer';
 import Home from './pages/Home';
+import Tickets from './pages/Tickets';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, MapPin, Phone, Mail, Instagram } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -240,6 +241,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tickets" element={<Tickets />} />
           <Route path="/about" element={<About />} />
           <Route path="/faq" element={<FAQ />} />
           <Route path="/contact" element={<Contact />} />

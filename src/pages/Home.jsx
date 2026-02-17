@@ -10,19 +10,17 @@ const Home = () => {
     { title: "Organic Colours", icon: "🎨", desc: "100% safe, eco-friendly organic colours." },
     { title: "Lucky Draw", icon: "🎰", desc: "Win amazing prizes in our lucky draw." },
     { title: "Food Stalls", icon: "🍔", desc: "Delicious food from the best local vendors." },
-    { title: "Bubble Guns", icon: "🫧", desc: "Fun bubble guns for an extra splash of joy." },
     { title: "Kids Zone", icon: "🧒", desc: "Safe and fun area specially designed for children." },
     { title: "Photoshoot", icon: "📸", desc: "Professional photography to capture your colorful moments." },
   ];
 
   const sponsors = [
-    { name: "Wasan Toyota", role: "Silver Sponsor", icon: "🚗", logo: "/Screenshot 2026-02-17 121506.png" },
-    { name: "Toyota", role: "Automobile Partner", icon: "🚘", logo: "/Screenshot 2026-02-17 121510.png" },
-    { name: "News18", role: "Media Partner", icon: "📺", logo: "/News18.png" },
-    { name: "ABS Fitness", role: "Fitness Partner", icon: "💪", logo: "/IMG_20260201_132446.jpg.jpeg" },
+    { name: "Peruchi Wadi", role: "Venue Partner", icon: "�", logo: "/Peruchi Wadi-1.png" },
+    { name: "Gratitude Gifts", role: "Gold Sponsor", icon: "🎁", logo: "/IMG_20250912_152211.jpg.jpeg" },
+    { name: "Wasan Toyota", role: "Silver Sponsor", icon: "�", logo: "/Screenshot 2026-02-17 143530.png" },
+    { name: "Swaraj Services", role: "Media Partner", icon: "📺", logo: "/New18.jpeg" },
+    { name: "ABS Fitness", role: "Fitness Partner", icon: "�", logo: "/IMG_20260201_132446.jpg.jpeg" },
     { name: "Yashodhan", role: "Associate Sponsor", icon: "🤝", logo: "/Untitled-1-01.png" },
-    { name: "Peruchi Wadi", role: "Venue Partner", icon: "📍", logo: "/Peruchi Wadi-1.png" },
-    { name: "Gratitude Gifts", role: "Gifting Partner", icon: "🎁", logo: "/IMG_20250912_152211.jpg.jpeg" },
   ];
 
   const sectionVariants = {
@@ -145,7 +143,7 @@ const Home = () => {
           >
             Official Partners
           </motion.h3>
-          <div className="grid grid-cols-2 lg:grid-cols-7 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-6 gap-6">
             {sponsors.map((s, i) => (
               <motion.div
                 key={i}
