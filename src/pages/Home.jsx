@@ -156,7 +156,14 @@ const Home = () => {
               >
                 <div className="h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                   {s.logo ? (
-                    <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain filter drop-shadow-lg" />
+                    <img 
+                      src={s.logo} 
+                      alt={s.name} 
+                      className="max-h-full max-w-full object-contain filter drop-shadow-lg" 
+                      loading="lazy"
+                      width="200"
+                      height="80"
+                    />
                   ) : (
                     <span className="text-4xl filter drop-shadow-lg">{s.icon}</span>
                   )}

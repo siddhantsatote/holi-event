@@ -33,6 +33,9 @@ const Hero = () => {
           src="/hero-bg.jpg" 
           alt="Holi Background" 
           className="w-full h-full object-cover opacity-80"
+          fetchpriority="high"
+          width="1920"
+          height="1080"
         />
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
         {/* Bottom Blend Layer */}
@@ -47,11 +50,10 @@ const Hero = () => {
 
       {/* Logo & Glow Container (Positioned Absolute Centered but behind content) */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[1600px] h-full flex items-center justify-center pointer-events-none z-10">
-          {/* Multi-color Glow Layers */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute w-[80%] h-[80%] bg-gradient-to-tr from-yellow-400/30 via-orange-500/30 to-red-500/30 blur-[100px] rounded-full animate-pulse scale-110"></div>
-            <div className="absolute w-[85%] h-[85%] bg-gradient-to-bl from-purple-600/20 via-pink-500/20 to-blue-500/20 blur-[120px] rounded-full animate-pulse [animation-delay:1s]"></div>
-            <div className="absolute w-[90%] h-[90%] bg-gradient-to-r from-green-400/15 via-cyan-400/15 to-teal-500/15 blur-[140px] rounded-full animate-pulse [animation-delay:2s] scale-90"></div>
+          {/* Multi-color Glow Layers (Simplified for performance) */}
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+            <div className="absolute w-[80%] h-[80%] bg-gradient-to-tr from-yellow-400/20 via-orange-500/20 to-red-500/20 blur-[80px] rounded-full animate-pulse scale-110 will-change-[opacity,transform]"></div>
+            <div className="absolute w-[85%] h-[85%] bg-gradient-to-bl from-purple-600/15 via-pink-500/15 to-blue-500/15 blur-[100px] rounded-full animate-pulse [animation-delay:1s] will-change-[opacity,transform]"></div>
           </div>
           
           <motion.div
@@ -72,7 +74,7 @@ const Hero = () => {
                  alt=""
                  animate={{ rotate: 360 }}
                  transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                 className="absolute w-[210%] md:w-[230%] max-w-none object-contain opacity-95 pointer-events-none"
+                 className="absolute w-[210%] md:w-[230%] max-w-none object-contain opacity-95 pointer-events-none will-change-transform"
                />
 
                {/* Fest Logo */}
@@ -81,6 +83,9 @@ const Hero = () => {
                  alt="Colour Fest" 
                  className="h-[350px] md:h-[500px] lg:h-[700px] w-auto object-contain drop-shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative z-20"
                  style={{ filter: "drop-shadow(0px 0px 0px white)" }} 
+                 fetchpriority="high"
+                 width="700"
+                 height="700"
                />
              </motion.div>
           </motion.div>

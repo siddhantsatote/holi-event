@@ -7,7 +7,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <img src="/logo.png" alt="ACE Event Management" className="h-14 w-auto mb-3" />
+            <img 
+              src="/logo.png" 
+              alt="ACE Event Management" 
+              className="h-14 w-auto mb-3" 
+              loading="lazy"
+              width="150"
+              height="56"
+            />
             <p className="text-sm text-gray-400">Creating unforgettable moments. Join us for Colour Fest 2026 — the biggest Holi event in Nashik!</p>
           </div>
 
