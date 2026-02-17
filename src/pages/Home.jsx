@@ -16,10 +16,13 @@ const Home = () => {
   ];
 
   const sponsors = [
-    { name: "Wasan Toyota", role: "Silver Sponsor", icon: "🚗" },
-    { name: "News18", role: "Media Partner", icon: "📺" },
-    { name: "ABS Fitness", role: "Fitness Partner", icon: "💪" },
-    { name: "Yashodhan", role: "Associate Sponsor", icon: "🤝" },
+    { name: "Wasan Toyota", role: "Silver Sponsor", icon: "🚗", logo: "/Screenshot 2026-02-17 121506.png" },
+    { name: "Toyota", role: "Automobile Partner", icon: "🚘", logo: "/Screenshot 2026-02-17 121510.png" },
+    { name: "News18", role: "Media Partner", icon: "📺", logo: "/News18.png" },
+    { name: "ABS Fitness", role: "Fitness Partner", icon: "💪", logo: "/IMG_20260201_132446.jpg.jpeg" },
+    { name: "Yashodhan", role: "Associate Sponsor", icon: "🤝", logo: "/Untitled-1-01.png" },
+    { name: "Peruchi Wadi", role: "Venue Partner", icon: "📍", logo: "/Peruchi Wadi-1.png" },
+    { name: "Gratitude Gifts", role: "Gifting Partner", icon: "🎁", logo: "/IMG_20250912_152211.jpg.jpeg" },
   ];
 
   const sectionVariants = {
@@ -95,7 +98,7 @@ const Home = () => {
             >
                <div className="rounded-[2.5rem] overflow-hidden h-full w-full">
                  <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.0!2d73.79!3d19.99!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDU5JzI0LjAiTiA3M8KwNDcnMjQuMCJF!5e0!3m2!1sen!2sin!4v1000000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.9470853149355!2d73.7265098!3d20.052659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddef550a6daebb%3A0xdf6ed42da1619d5d!2sPeruchi%20Wadi%20Chulivarachi%20Misal!5e0!3m2!1sen!2sin!4v1771314502266!5m2!1sen!2sin"
                   width="100%"
                   height="450"
                   style={{ border: 0 }}
@@ -114,10 +117,10 @@ const Home = () => {
                  THE<br/>VENUE
                </h2>
                <p className="text-2xl text-gray-300 mb-8 font-light border-r-4 lg:border-r-0 lg:border-l-4 border-[#FFE500] pr-6 lg:pl-6 lg:pr-0">
-                 Peruchi Wadi Chulivarchi Misal,<br/>Mungsare, Nashik
+                 Peruchi Wadi Chulivarchi Misal,<br/>Mungsare, Nashik,<br/>Maharashtra 422003
                </p>
                <motion.a
-                  href="https://maps.google.com/?q=Peruchi+Wadi+Chulivarchi+Misal+Mungsare+Nashik"
+                  href="https://www.google.com/maps/search/?api=1&query=Peruchi+Wadi+Chulivarchi+Misal"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-[#FFE500] transition-colors shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,229,0,0.5)]"
@@ -142,7 +145,7 @@ const Home = () => {
           >
             Official Partners
           </motion.h3>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 lg:grid-cols-7 gap-6">
             {sponsors.map((s, i) => (
               <motion.div
                 key={i}
@@ -151,11 +154,17 @@ const Home = () => {
                 transition={{ delay: i * 0.1, duration: 0.4 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-[#FFE500]/30 transition-all cursor-default group"
+                className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-[#FFE500]/30 transition-all cursor-default group"
               >
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">{s.icon}</div>
+                <div className="h-16 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {s.logo ? (
+                    <img src={s.logo} alt={s.name} className="max-h-full max-w-full object-contain filter drop-shadow-lg" />
+                  ) : (
+                    <span className="text-4xl filter drop-shadow-lg">{s.icon}</span>
+                  )}
+                </div>
                 <p className="text-[10px] text-[#FFE500] uppercase tracking-widest font-bold mb-2">{s.role}</p>
-                <p className="text-lg font-bold text-white font-heading">{s.name}</p>
+                <p className="text-sm font-bold text-white font-heading leading-tight">{s.name}</p>
               </motion.div>
             ))}
           </div>

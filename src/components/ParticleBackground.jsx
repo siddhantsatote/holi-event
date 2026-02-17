@@ -12,9 +12,6 @@ const ParticleBackground = () => {
       id="tsparticles"
       init={particlesInit}
       options={{
-        background: {
-          color: { value: "#0a0a0a" },
-        },
         fpsLimit: 60,
         interactivity: {
           events: {
