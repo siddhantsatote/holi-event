@@ -20,7 +20,7 @@ const Home = () => {
     { name: "Wasan Toyota", role: "Silver Sponsor", icon: "�", logo: "/Screenshot 2026-02-17 143530.png" },
     { name: "Swaraj Services", role: "Media Partner", icon: "📺", logo: "/New18.jpeg" },
     { name: "ABS Fitness", role: "Fitness Partner", icon: "�", logo: "/IMG_20260201_132446.jpg.jpeg" },
-    { name: "Yashodhan", role: "Associate Sponsor", icon: "🤝", logo: "/Untitled-1-01.png" },
+    { name: "Yashodhan", role: "Associate Sponsor", icon: "🤝", logo: "/IMG_20250824_145253_725.webp" },
   ];
 
   const sectionVariants = {
