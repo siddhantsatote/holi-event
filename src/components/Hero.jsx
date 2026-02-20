@@ -30,7 +30,7 @@ const Hero = () => {
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero-bg.jpg" 
+          src="/hero-bg.webp" 
           alt="Holi Background" 
           className="hidden md:block w-full h-full object-cover opacity-80"
           fetchpriority="high"
@@ -68,7 +68,7 @@ const Hero = () => {
             initial={{ scale: 0.5, opacity: 0, rotate: -10 }}
             animate={{ scale: 1, opacity: 1, rotate: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 10, duration: 0.8 }}
-            className="relative flex items-center justify-center"
+            className="hidden md:flex relative items-center justify-center"
           >
              {/* Logo & Splash Container */}
              <motion.div
@@ -87,7 +87,7 @@ const Hero = () => {
 
                {/* Fest Logo */}
                <img 
-                 src="/fest-logo.png" 
+                 src="/fest-logo.webp" 
                  alt="Colour Fest" 
                  className="h-[350px] md:h-[500px] lg:h-[700px] w-auto object-contain drop-shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative z-20"
                  style={{ filter: "drop-shadow(0px 0px 0px white)" }} 
@@ -104,7 +104,34 @@ const Hero = () => {
         
         {/* Top Section: Branding & Theme text */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pointer-events-auto">
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-2 w-full">
+            {/* Mobile Fest Logo - Repositioned to the very top for mobile */}
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="md:hidden relative w-full flex items-center justify-center py-6 mb-2"
+            >
+               <motion.div
+                 animate={{ y: [-10, 10, -10] }}
+                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                 className="relative flex items-center justify-center"
+               >
+                 <motion.img
+                   src="/fest-bg.png"
+                   alt=""
+                   animate={{ rotate: 360 }}
+                   transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                   className="absolute w-[200%] max-w-none object-contain opacity-80 pointer-events-none"
+                 />
+                 <img 
+                   src="/fest-logo.webp" 
+                   alt="Colour Fest" 
+                   className="h-[220px] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative z-20"
+                 />
+               </motion.div>
+            </motion.div>
+
             <motion.div 
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
