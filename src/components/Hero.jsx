@@ -25,7 +25,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex flex-col justify-between pt-24 pb-10 px-6 md:px-12 lg:px-20 bg-black">
+    <section className="relative min-h-screen md:h-screen w-full md:overflow-hidden flex flex-col justify-between pt-24 pb-10 px-6 md:px-12 lg:px-20 bg-black">
       
       {/* Background Image Layer */}
       <div className="absolute inset-0 z-0">
