@@ -16,17 +16,6 @@ const Tickets = () => {
       popular: true
     },
     {
-      name: "Stag",
-      icon: <Zap className="text-blue-400" size={32} />,
-      earlyBird: "599",
-      actual: "699",
-      perPerson: true,
-      specialty: "Entry + Best Stage View + Organic Colours",
-      color: "from-blue-400 to-cyan-500",
-      features: [],
-      link: "https://rzp.io/rzp/eMjk7Nq"
-    },
-    {
       name: "Couple",
       icon: <Heart className="text-pink-400" size={32} />,
       earlyBird: "899",
@@ -58,7 +47,7 @@ const Tickets = () => {
       specialty: "Entry + Best Stage View + Organic Colours",
       color: "from-green-400 to-teal-500",
       features: [],
-      link: "https://rzp.io/rzp/Top7FIe0"
+      link: "https://rzp.io/rzp/fiXP7PZv"
     }
   ];
 
