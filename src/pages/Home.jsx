@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import VenueMap from '../components/VenueMap';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -74,9 +75,12 @@ const Home = () => {
             </motion.div>
           ))}
         </div>
-      </section>
+        </section>
 
-      {/* Venue Section */}
+        {/* Venue Map 3D Interactive */}
+        <VenueMap />
+
+        {/* Venue Section */}
       <section className="py-24 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <motion.div

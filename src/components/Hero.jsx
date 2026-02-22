@@ -105,54 +105,55 @@ const Hero = () => {
         {/* Top Section: Branding & Theme text */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full pointer-events-auto">
           <div className="flex flex-col items-start gap-2 w-full">
-            {/* Mobile Fest Logo - Repositioned to the very top for mobile */}
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="md:hidden relative w-full flex items-center justify-center py-6 mb-2"
-            >
-               <motion.div
-                 animate={{ y: [-10, 10, -10] }}
-                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                 className="relative flex items-center justify-center"
-               >
-                 <motion.img
-                   src="/fest-bg.png"
-                   alt=""
-                   animate={{ rotate: 360 }}
-                   transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                   className="absolute w-[200%] max-w-none object-contain opacity-80 pointer-events-none"
-                 />
-                 <img 
-                   src="/fest-logo.webp" 
-                   alt="Colour Fest" 
-                   className="h-[330px] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative z-20"
-                 />
-               </motion.div>
-            </motion.div>
+              {/* Mobile Fest Logo - at the very top */}
+              <motion.div
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.2 }}
+                className="md:hidden relative w-full flex items-center justify-center py-4 mb-2"
+              >
+                 <motion.div
+                   animate={{ y: [-10, 10, -10] }}
+                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                   className="relative flex items-center justify-center"
+                 >
+                   <motion.img
+                     src="/fest-bg.png"
+                     alt=""
+                     animate={{ rotate: 360 }}
+                     transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+                     className="absolute w-[200%] max-w-none object-contain opacity-80 pointer-events-none"
+                   />
+                   <img 
+                     src="/fest-logo.webp" 
+                     alt="Colour Fest" 
+                     className="h-[300px] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative z-20"
+                   />
+                 </motion.div>
+              </motion.div>
 
-            <motion.div 
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="flex items-center gap-3 mb-4"
-            >
-              <img src="/logo.png" alt="ACE" className="h-16 w-auto drop-shadow-lg" />
-              <div className="h-10 w-px bg-white/30"></div>
-              <span className="text-gray-300 tracking-widest uppercase text-xs font-bold">Ace Event<br/>Management</span>
-            </motion.div>
+              {/* ACE branding — below fest logo on mobile */}
+              <motion.div 
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                className="flex items-center gap-3 mb-4"
+              >
+                <img src="/logo.png" alt="ACE" className="h-16 w-auto drop-shadow-lg" />
+                <div className="h-10 w-px bg-white/30"></div>
+                <span className="text-gray-300 tracking-widest uppercase text-xs font-bold">Ace Event<br/>Management</span>
+              </motion.div>
 
-            <motion.h2 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-              className="text-3xl md:text-5xl font-heading font-black text-white leading-tight drop-shadow-xl"
-            >
-              The Ultimate<br/>
-              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-primary">Holi Experience</span>
-            </motion.h2>
-          </div>
+              <motion.h2 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                className="text-3xl md:text-5xl font-heading font-black text-white leading-tight drop-shadow-xl"
+              >
+                The Ultimate<br/>
+                <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-primary">Holi Experience</span>
+              </motion.h2>
+            </div>
 
           <motion.div 
              initial={{ opacity: 0 }}
