@@ -127,7 +127,7 @@ const Hero = () => {
                  <img 
                    src="/fest-logo.webp" 
                    alt="Colour Fest" 
-                   className="h-[220px] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative z-20"
+                   className="h-[330px] w-auto object-contain drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative z-20"
                  />
                </motion.div>
             </motion.div>
