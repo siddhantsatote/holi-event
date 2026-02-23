@@ -80,8 +80,8 @@ const VenueMap = () => {
           {/* Floor plan image */}
           <div className="w-full bg-white p-4 md:p-8">
             <img
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/470b2613-088f-4fa0-a558-0d09972255eb/Gemini_Generated_Image_tjfiv6tjfiv6tjfi-1771780614512.png"
-              alt="Holi Festival Floor Plan"
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/470b2613-088f-4fa0-a558-0d09972255eb/unnamed-1771820754244.jpg"
+                alt="Holi Festival Floor Plan"
               className="w-full h-auto object-contain rounded-xl"
               style={{ maxHeight: '640px' }}
             />
