@@ -220,7 +220,7 @@ const Hero = () => {
               to="/tickets"
               className="group relative inline-flex items-center gap-3 bg-[#FFE500] text-black text-xl md:text-4xl font-black italic px-8 py-4 md:px-14 md:py-8 rounded-full shadow-[0_0_40px_rgba(255,229,0,0.5)] hover:shadow-[0_0_60px_rgba(255,229,0,0.7)] hover:scale-105 transition-all transform skew-x-[-10deg] opacity-95"
             >
-              <span className="skew-x-[10deg] tracking-tighter">REGISTER NOW</span>
+              <span className="skew-x-[10deg] tracking-tighter">BUY TICKETS</span>
               <div className="bg-black text-white rounded-full p-2 skew-x-[10deg] group-hover:rotate-45 transition-transform">
                  <Ticket size={28} />
               </div>
