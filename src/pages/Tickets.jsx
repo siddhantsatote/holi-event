@@ -47,7 +47,7 @@ const Tickets = () => {
       specialty: "Entry + Best Stage View + Organic Colours",
       color: "from-green-400 to-teal-500",
       features: [],
-      link: "https://rzp.io/rzp/fiXP7PZv"
+      link: "https://rzp.io/rzp/Top7FIe0"
     }
   ];
 
