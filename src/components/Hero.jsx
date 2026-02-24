@@ -33,16 +33,16 @@ const Hero = () => {
           src="/hero-bg.webp" 
           alt="Holi Background" 
           className="hidden md:block w-full h-full object-cover opacity-80"
-          fetchpriority="high"
-          width="1920"
+            fetchPriority="high"
+            width="1920"
           height="1080"
         />
         <img 
           src="/baca03a629e5af1515bce0e713938509.webp" 
           alt="Holi Background Mobile" 
           className="block md:hidden w-full h-full object-cover opacity-80"
-          fetchpriority="high"
-          width="1000"
+            fetchPriority="high"
+            width="1000"
           height="1500"
         />
         <div className="absolute inset-0 bg-black/20 backdrop-blur-[1px]"></div>
@@ -89,9 +89,9 @@ const Hero = () => {
                <img 
                  src="/fest-logo.webp" 
                  alt="Colour Fest" 
-                 className="h-[350px] md:h-[500px] lg:h-[700px] w-auto object-contain drop-shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative z-20"
-                 style={{ filter: "drop-shadow(0px 0px 0px white)" }} 
-                 fetchpriority="high"
+                  className="h-[350px] md:h-[500px] lg:h-[700px] w-auto object-contain drop-shadow-[0_15px_45px_rgba(0,0,0,0.6)] relative z-20"
+                  style={{ filter: "drop-shadow(0px 0px 0px white)" }} 
+                  fetchPriority="high"
                  width="700"
                  height="700"
                />
