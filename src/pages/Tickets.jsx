@@ -9,7 +9,7 @@ const Tickets = () => {
       earlyBird: "899",
       actual: "999",
       perPerson: true,
-      specialty: "Entry + Premium Experience + Organic Colours",
+      specialty: "Entry + Premium Experience + Organic Colours + Food",
       color: "from-yellow-400 to-orange-500",
       features: [],
       link: "https://rzp.io/rzp/piELYEN",
