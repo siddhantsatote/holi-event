@@ -21,6 +21,7 @@ const Tickets = () => {
       earlyBird: "899",
       actual: "999",
       perPerson: false,
+      note: "2 person",
       specialty: "Entry + Best Stage View + Organic Colours",
       color: "from-pink-400 to-rose-500",
       features: [],
@@ -112,7 +113,7 @@ const Tickets = () => {
                   <span className="text-xl text-gray-500 line-through font-medium">₹{tier.actual}</span>
                 </div>
                 <p className="text-xs text-[#FFE500] font-bold tracking-widest uppercase">
-                    Early Bird Price {tier.perPerson ? 'PP' : ''}
+                    Early Bird Price {tier.perPerson ? 'per person' : ''}
                     {tier.note && <span className="text-gray-400 lowercase ml-2">({tier.note})</span>}
                 </p>
               </div>
