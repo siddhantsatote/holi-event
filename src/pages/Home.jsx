@@ -79,6 +79,76 @@ const Home = () => {
         </div>
         </section>
 
+        {/* Event Anchor - Saylii */}
+        <section className="py-24 px-4 max-w-5xl mx-auto relative z-10">
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="text-center mb-12"
+          >
+            <span className="text-sm font-bold tracking-widest text-[#FFE500] uppercase mb-3 block">Your Host</span>
+            <h2 className="text-5xl md:text-6xl font-heading font-black text-white inline-block drop-shadow-xl">
+              EVENT <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFE500] to-orange-500">ANCHOR</span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.7, type: "spring" }}
+            viewport={{ once: true }}
+            className="relative group"
+          >
+            <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] overflow-hidden shadow-2xl group-hover:border-[#FFE500]/40 transition-all duration-500">
+              {/* Glow Effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-[#FFE500]/20 via-orange-500/20 to-pink-500/20 rounded-[2.5rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+              
+              <div className="flex flex-col md:flex-row items-center">
+                {/* Image */}
+                <motion.div
+                  className="w-full md:w-1/2 relative overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <img
+                    src="/IMG_20260217_180734.jpg.jpeg"
+                    alt="Saylii - Event Anchor"
+                    className="w-full h-[500px] md:h-[550px] object-cover object-top"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent md:bg-gradient-to-r md:from-transparent md:via-transparent md:to-black/80"></div>
+                </motion.div>
+
+                {/* Info */}
+                <div className="w-full md:w-1/2 p-8 md:p-12 text-center md:text-left">
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.3, duration: 0.6 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className="inline-block px-4 py-1.5 bg-[#FFE500]/10 border border-[#FFE500]/30 rounded-full text-[#FFE500] text-xs font-bold tracking-widest uppercase mb-6">
+                      🎤 Anchor
+                    </span>
+                    <h3 className="text-4xl md:text-5xl font-heading font-black text-white mb-4 leading-tight">
+                      SAYLII
+                    </h3>
+                    <p className="text-gray-400 text-lg leading-relaxed mb-6 font-medium">
+                      Get ready to be energized! Saylii will be your host, keeping the vibes high and the crowd electrified throughout the festival. 🎉
+                    </p>
+                    <div className="flex items-center justify-center md:justify-start gap-3">
+                      <div className="h-px w-12 bg-gradient-to-r from-[#FFE500] to-transparent"></div>
+                      <span className="text-sm text-gray-500 font-bold tracking-wider uppercase">Holi 2026</span>
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </section>
+
         {/* Venue Map 3D Interactive */}
         <VenueMap />
 
