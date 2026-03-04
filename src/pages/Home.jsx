@@ -149,6 +149,137 @@ const Home = () => {
           </motion.div>
         </section>
 
+        {/* DJ Lineup Section */}
+        <section className="py-24 px-4 max-w-6xl mx-auto relative z-10">
+          <motion.div
+            variants={sectionVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            className="text-center mb-16"
+          >
+            <span className="text-sm font-bold tracking-widest text-[#FFE500] uppercase mb-3 block">Feel The Beat</span>
+            <h2 className="text-5xl md:text-6xl font-heading font-black text-white inline-block drop-shadow-xl">
+              OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FFE500] to-orange-500">DJs</span>
+            </h2>
+            <p className="text-gray-400 text-lg mt-4 max-w-2xl mx-auto font-medium">
+              Get ready to dance to the sickest beats! Our star DJs will keep the energy pumping all day long. 🔥🎶
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* DJ Sammer */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, type: "spring" }}
+              viewport={{ once: true }}
+              className="relative group"
+            >
+              <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden shadow-2xl group-hover:border-[#FFE500]/40 transition-all duration-500">
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-[#FFE500]/20 via-orange-500/20 to-red-500/20 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+                
+                {/* DJ Photo */}
+                <motion.div
+                  className="relative overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <img
+                    src="/dj-sammer-photo.png"
+                    alt="DJ Sammer"
+                    className="w-full h-[400px] md:h-[450px] object-cover object-top"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                </motion.div>
+
+                {/* DJ Info */}
+                <div className="p-6 md:p-8 text-center relative -mt-16 z-10">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className="inline-block px-4 py-1.5 bg-[#FFE500]/10 border border-[#FFE500]/30 rounded-full text-[#FFE500] text-xs font-bold tracking-widest uppercase mb-4">
+                      🎧 DJ
+                    </span>
+                    {/* Logo */}
+                    <div className="flex justify-center mb-4">
+                      <img
+                        src="/dj-sammer-logo.png"
+                        alt="DJ Sammer Logo"
+                        className="h-20 md:h-24 object-contain filter drop-shadow-[0_0_15px_rgba(255,229,0,0.3)] invert"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed font-medium">
+                      Dropping fire beats that'll make you lose yourself in the colors! 🔥
+                    </p>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* DJ Jnny */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, type: "spring" }}
+              viewport={{ once: true }}
+              className="relative group"
+            >
+              <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] overflow-hidden shadow-2xl group-hover:border-[#FFE500]/40 transition-all duration-500">
+                {/* Glow Effect */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-pink-500/20 via-purple-500/20 to-[#FFE500]/20 rounded-[2rem] blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 -z-10"></div>
+                
+                {/* DJ Photo */}
+                <motion.div
+                  className="relative overflow-hidden"
+                  whileHover={{ scale: 1.02 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <img
+                    src="/dj-jnny-photo.jpg"
+                    alt="DJ Jnny"
+                    className="w-full h-[400px] md:h-[450px] object-cover object-top"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                </motion.div>
+
+                {/* DJ Info */}
+                <div className="p-6 md:p-8 text-center relative -mt-16 z-10">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3, duration: 0.5 }}
+                    viewport={{ once: true }}
+                  >
+                    <span className="inline-block px-4 py-1.5 bg-[#FFE500]/10 border border-[#FFE500]/30 rounded-full text-[#FFE500] text-xs font-bold tracking-widest uppercase mb-4">
+                      🎧 DJ
+                    </span>
+                    {/* Logo */}
+                    <div className="flex justify-center mb-4">
+                      <img
+                        src="/dj-jnny-logo.png"
+                        alt="DJ Jnny Logo"
+                        className="h-16 md:h-20 object-contain filter drop-shadow-[0_0_15px_rgba(255,229,0,0.3)] invert"
+                        loading="lazy"
+                      />
+                    </div>
+                    <p className="text-gray-400 text-sm leading-relaxed font-medium">
+                      Get ready for electrifying mixes that'll keep you grooving all day! 🎶
+                    </p>
+                  </motion.div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
         {/* Venue Map 3D Interactive */}
         <VenueMap />
 

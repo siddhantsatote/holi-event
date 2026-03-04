@@ -49,6 +49,18 @@ const Tickets = () => {
       color: "from-green-400 to-teal-500",
       features: [],
       link: "https://rzp.io/rzp/Top7FIe0"
+    },
+    {
+      name: "Women's Day Special",
+      icon: <Star className="text-fuchsia-400" size={32} />,
+      earlyBird: "499",
+      actual: "599",
+      perPerson: true,
+      note: "Min 5 mandatory",
+      specialty: "Entry + Best Stage View + Organic Colours",
+      color: "from-fuchsia-400 to-pink-500",
+      features: [],
+      link: "https://rzp.io/rzp/yeWaKdw"
     }
   ];
 
